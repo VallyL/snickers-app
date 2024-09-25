@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import styles from "../../components/Goods/styles.module.css";
 
 function Goods() {
   const [products, setProducts] = useState([]);
@@ -32,15 +33,15 @@ function Goods() {
   }
 
   return (
-    <nav>
+    <nav className={styles.goodsContainer}>
       {products.map((product) => (
-        <div key={product.id}>
+        <div key={product.id} className={styles.snickerCart}>
           <img src={product.image} alt={product.name} />
           <h3>{product.name}</h3>
-          <div>
+          <div className={styles.priceDiv}>
             <div>
-              <p>Price:</p>
-              <p>{product.price}$</p>
+              <p>PRICE:</p>
+              <h3>{product.price}$</h3>
             </div>
             <button>+</button>
           </div>
