@@ -1,0 +1,17 @@
+.mainContainer {
+  width: 100%;
+  padding: 30px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mainContainer > img {
+  width: 100%;
+}
+
+.mainContainer > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
