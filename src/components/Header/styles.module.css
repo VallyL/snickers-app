@@ -1,0 +1,38 @@
+.headerContainer {
+  background-color: rgba(59, 60, 61, 1);
+  padding: 30px 90px;
+  justify-content: space-between;
+}
+
+.headerContainer,
+.linksContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer > a,
+.linksContainer > a {
+  text-decoration: none;
+}
+
+.headerContainer > a {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  color: white;
+}
+
+.linksContainer {
+  gap: 30px;
+}
+
+.linksContainer > a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.linksContainer > a:focus {
+  color: white;
+}
