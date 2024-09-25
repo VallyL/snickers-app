@@ -1,0 +1,67 @@
+.itemContainer {
+  width: 100%;
+  background-color: rgba(250, 250, 250, 1);
+  padding: 15px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.itemContainer,
+.nameDiv,
+.nameDiv > div {
+  display: flex;
+  align-items: center;
+}
+
+.itemContainer > img {
+  width: 197px;
+}
+
+.itemContainer > hr {
+  height: 100%;
+  margin: 0 20px;
+}
+
+.nameDiv {
+  gap: 40px;
+  max-width: 420px;
+}
+
+.nameDiv > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.nameDiv > div {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nameDiv > div > p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: rgba(102, 102, 102, 1);
+}
+
+.nameDiv > div > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.itemContainer > button {
+  position: absolute;
+  right: 25px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(243, 243, 243, 1);
+  cursor: pointer;
+}
+
+.itemContainer > button:hover {
+  background-color: rgb(164, 164, 164);
+}
