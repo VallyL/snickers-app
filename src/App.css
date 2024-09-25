@@ -4,3 +4,8 @@
   box-sizing: border-box;
   transition: all 0.5s;
 }
+
+body {
+  min-height: 100vh;
+  position: relative;
+}

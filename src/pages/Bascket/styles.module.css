@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 300px;
 }
 
 .bascketContainer,
@@ -42,6 +43,7 @@
   flex-direction: column;
   gap: 20px;
   height: fit-content;
+  border-radius: 10px;
 }
 
 .totalContainer > h1 {

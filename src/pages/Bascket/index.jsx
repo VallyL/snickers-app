@@ -5,7 +5,7 @@ import { fetchCart } from "../../redux/actions/action";
 import { useEffect } from "react";
 
 function Bascket() {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart.cart);
   const dispatch = useDispatch();
 
   useEffect(() => {
