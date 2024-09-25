@@ -15,6 +15,10 @@
   justify-content: center;
 }
 
+.snickerCart:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
 .snickerCart,
 .priceDiv {
   display: flex;

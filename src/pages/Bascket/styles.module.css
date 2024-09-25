@@ -1,0 +1,17 @@
+.bascketContainer {
+  padding: 30px 90px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.bascketContainer > h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.bascketContainer > hr {
+  border: 1px solid rgba(234, 234, 234, 1);
+}

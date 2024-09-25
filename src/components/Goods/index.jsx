@@ -1,29 +1,11 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
 import styles from "../../components/Goods/styles.module.css";
+import { useFetchProducts } from "../useFetchProducts";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/actions/action";
 
 function Goods() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      setLoading(true);
-      try {
-        const response = await axios.get(
-          "https://66f3c85977b5e8897096cdc5.mockapi.io/productData"
-        );
-        setProducts(response.data);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const { products, loading, error } = useFetchProducts();
+  const dispatch = useDispatch();
 
   if (loading) {
     return <p>Loading ...</p>;
@@ -43,7 +25,7 @@ function Goods() {
               <p>PRICE:</p>
               <h3>{product.price}$</h3>
             </div>
-            <button>+</button>
+            <button onClick={() => dispatch(addToCart(product))}>+</button>
           </div>
         </div>
       ))}
