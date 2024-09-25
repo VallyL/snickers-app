@@ -1,9 +1,16 @@
 import styles from "../../pages/Bascket/styles.module.css";
 import BascketItem from "../../components/BascketItem";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchCart } from "../../redux/actions/action";
+import { useEffect } from "react";
 
 function Bascket() {
   const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCart());
+  }, [dispatch]);
 
   return (
     <section className={styles.bascketContainer}>

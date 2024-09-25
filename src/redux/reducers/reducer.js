@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../actions/action";
+import {
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  FETCH_CART_SUCCESS,
+} from "../actions/action";
 
 const initialState = {
   cart: [],
@@ -15,6 +19,11 @@ const cartReducer = (state = initialState, action) => {
       return {
         ...state,
         cart: state.cart.filter((item) => item.id !== action.payload),
+      };
+    case FETCH_CART_SUCCESS:
+      return {
+        ...state,
+        cart: action.payload,
       };
     default:
       return state;
