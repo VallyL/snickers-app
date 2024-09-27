@@ -62,6 +62,71 @@
   cursor: pointer;
 }
 
+.itemContainer > button > img {
+  width: 30px;
+}
+
 .itemContainer > button:hover {
   background-color: rgb(164, 164, 164);
+}
+
+@media screen and (max-width: 1360px) {
+  .nameDiv {
+    gap: 40px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .itemContainer > img {
+    width: 187px;
+  }
+
+  .itemContainer > hr {
+    margin: 0 10px;
+  }
+
+  .nameDiv > h3 {
+    font-size: 22px;
+  }
+
+  .nameDiv > div > h3 {
+    font-size: 22px;
+  }
+
+  .itemContainer > button {
+    right: 20px;
+    width: 66px;
+    height: 66px;
+  }
+
+  .itemContainer > button > img {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .itemContainer > img {
+    width: 157px;
+  }
+
+  .nameDiv {
+    gap: 20px;
+    max-width: 280px;
+  }
+
+  .nameDiv > h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .itemContainer > button {
+    right: 20px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .itemContainer > button > img {
+    width: 20px;
+  }
 }

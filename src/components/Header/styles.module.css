@@ -36,3 +36,9 @@
 .linksContainer > a:focus {
   color: white;
 }
+
+@media screen and (max-width: 1300px) {
+  .headerContainer {
+    padding: 30px 40px;
+  }
+}

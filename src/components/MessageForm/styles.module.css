@@ -54,8 +54,8 @@
   cursor: pointer;
 }
 
-.msNav > div > input:hover,
-.messageForm > textarea:hover {
+.msNav > div > input:focus,
+.messageForm > textarea:focus {
   outline: 2px solid rgb(255, 165, 56);
 }
 
@@ -69,4 +69,15 @@
 
 .inputMessage {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .messageForm,
+  .msNav {
+    gap: 20px;
+  }
+
+  .inputMessage {
+    margin-top: 20px;
+  }
 }

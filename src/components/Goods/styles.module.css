@@ -82,3 +82,15 @@
   font-weight: 500;
   line-height: 17px;
 }
+
+@media screen and (max-width: 1300px) {
+  .goodsContainer {
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+
+  .snickerCart {
+    padding: 30px;
+    gap: 20px;
+  }
+}

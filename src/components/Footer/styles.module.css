@@ -74,3 +74,9 @@
 .emailDiv > div > a:hover {
   background-color: rgba(59, 60, 61, 1);
 }
+
+@media screen and (max-width: 1300px) {
+  .footerContainer {
+    padding: 30px 40px;
+  }
+}

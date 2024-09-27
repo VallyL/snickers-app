@@ -2,7 +2,7 @@
   width: 100%;
   padding: 30px 90px;
   gap: 30px;
-  padding-bottom: 300px;
+  padding-bottom: 500px;
 }
 
 .contactsContainer,
@@ -46,6 +46,11 @@
   padding: 20px;
   align-items: center;
   gap: 30px;
+  height: fit-content;
+}
+
+.findUsDiv > div > a > img {
+  width: 76px;
 }
 
 .findUsDiv > p {
@@ -64,4 +69,29 @@
 
 .sendMessageDiv {
   width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .contactsContainer {
+    padding: 20px 40px;
+    gap: 20px;
+    padding-bottom: 500px;
+  }
+
+  .contactsContainer > ul {
+    margin-top: 30px;
+  }
+
+  .messageNav {
+    gap: 40px;
+  }
+
+  .findUsDiv {
+    width: 320px;
+    gap: 20px;
+  }
+
+  .findUsDiv > div > a > img {
+    width: 56px;
+  }
 }

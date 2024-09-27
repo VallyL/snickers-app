@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-bottom: 300px;
+  padding-bottom: 500px;
 }
 
 .bascketContainer,
@@ -79,4 +79,31 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
+}
+
+@media screen and (max-width: 1300px) {
+  .bascketContainer {
+    padding: 20px 40px;
+    gap: 20px;
+    padding-bottom: 500px;
+  }
+
+  .totalContainer {
+    width: 400px;
+  }
+
+  .totalContainer > ul {
+    gap: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .totalContainer > p {
+    line-height: 10px;
+  }
+
+  .totalContainer > h2 {
+    line-height: 12px;
+  }
 }
