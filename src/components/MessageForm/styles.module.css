@@ -1,0 +1,72 @@
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: end;
+}
+
+.messageForm,
+.msNav,
+.msNav > div,
+.msNav > div > input,
+.messageForm > textarea {
+  width: 100%;
+}
+
+.msNav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.msNav > div > input {
+  height: 66px;
+}
+
+.msNav > div > input,
+.messageForm > textarea {
+  background-color: rgba(250, 250, 250, 1);
+  border: none;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+  padding-left: 20px;
+}
+
+.messageForm > textarea {
+  height: 116px;
+  padding-top: 20px;
+  resize: none;
+}
+
+.messageForm > button {
+  background-color: black;
+  color: white;
+  width: 131px;
+  height: 53px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 11px;
+  cursor: pointer;
+}
+
+.msNav > div > input:hover,
+.messageForm > textarea:hover {
+  outline: 2px solid rgb(255, 165, 56);
+}
+
+.inputMessage,
+.messageForm > p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.inputMessage {
+  margin-top: 30px;
+}

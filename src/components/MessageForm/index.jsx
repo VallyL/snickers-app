@@ -4,6 +4,7 @@ import {
   submitContactForm,
 } from "../../redux/actions/contactAction";
 import { useState } from "react";
+import styles from "../../components/MessageForm/styles.module.css";
 
 function MessageForm() {
   const dispatch = useDispatch();
@@ -36,7 +37,7 @@ function MessageForm() {
 
     setTimeout(() => {
       dispatch({ type: SUBMIT_CONTACT_FORM_SUCCESS });
-    }, 2000);
+    }, 5000);
   };
 
   const validateForm = ({ name, email, message }) => {
@@ -46,15 +47,21 @@ function MessageForm() {
       message: "",
     };
 
-    if (!name || name.trim().length < 2) {
+    if (!name) {
+      errors.name = "Name is required.";
+    } else if (name.trim().length < 2) {
       errors.name = "Name must be at least 2 characters.";
     }
 
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    if (!email) {
+      errors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       errors.email = "Please enter a valid email address.";
     }
 
-    if (!message || message.trim().length > 1000) {
+    if (!message) {
+      errors.message = "Message is required.";
+    } else if (message.trim().length > 1000) {
       errors.message = "Message cannot exceed 1000 characters.";
     }
 
@@ -62,8 +69,8 @@ function MessageForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <nav>
+    <form onSubmit={handleSubmit} className={styles.messageForm}>
+      <nav className={styles.msNav}>
         <div>
           <input
             type="email"
@@ -72,7 +79,9 @@ function MessageForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && (
+            <p className={styles.inputMessage}>{errors.email}</p>
+          )}
         </div>
         <div>
           <input
@@ -82,7 +91,7 @@ function MessageForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <p className={styles.inputMessage}>{errors.name}</p>}
         </div>
       </nav>
       <textarea

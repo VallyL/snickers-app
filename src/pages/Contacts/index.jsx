@@ -14,7 +14,7 @@ function Contacts() {
         <li>emailexample@email.com</li>
       </ul>
       <nav className={styles.messageNav}>
-        <div>
+        <div className={styles.sendMessageDiv}>
           <MessageForm />
         </div>
         <div className={styles.findUsDiv}>
