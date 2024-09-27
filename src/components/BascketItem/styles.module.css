@@ -130,3 +130,37 @@
     width: 20px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .itemContainer > img {
+    width: 127px;
+  }
+
+  .nameDiv {
+    max-width: 240px;
+  }
+
+  .nameDiv > h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .itemContainer > button {
+    right: 15px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .itemContainer > button > img {
+    width: 18px;
+  }
+
+  .nameDiv > div > h3 {
+    font-size: 20px;
+  }
+
+  .nameDiv > div > p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

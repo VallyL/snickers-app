@@ -95,3 +95,14 @@
     width: 56px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .messageNav {
+    gap: 20px;
+  }
+
+  .contactsContainer > h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

@@ -80,3 +80,17 @@
     padding: 30px 40px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .footerContainer > p,
+  .emailDiv > p,
+  .emailDiv > div > a {
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .emailDiv > div > input {
+    width: 200px;
+    font-size: 14px;
+  }
+}

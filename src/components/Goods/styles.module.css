@@ -94,3 +94,29 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .goodsContainer {
+    column-gap: 20px;
+  }
+
+  .snickerCart > h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .priceDiv > div > p {
+    font-size: 12px;
+  }
+
+  .priceDiv > div > h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .priceDiv > button {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
